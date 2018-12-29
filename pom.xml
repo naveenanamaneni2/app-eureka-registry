@@ -78,6 +78,15 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
-	</repositories>
+
+</repositories><distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>PoC</id>
+			<name>Jenkins Job Repository</name>
+			<url>file:///home/repo/.m2</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 </project>
