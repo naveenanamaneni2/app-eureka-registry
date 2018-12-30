@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: app-eureka-registy
+  namespace: development
+  labels:
+    app: app-eureka-registy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        apps: app-eureka-registy
+    spec:
+      containers:
+      - name: app-eureka-registy
+        image: naveenanamaneni2/app-eureka-registy:development
+        ports:
+        - containerPort: 9191
